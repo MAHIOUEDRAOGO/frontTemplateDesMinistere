@@ -9,7 +9,7 @@
       <div>
         <div class="inline-flex items-center gap-2 px-3 py-1 bg-white text-green-700 text-xs md:text-sm font-medium rounded-full mb-6 whitespace-nowrap">
           <span class="w-2 h-2 bg-green-600 rounded-full animate-pulse"></span>
-          {{ ministere()?.nomGeneral || 'Burkina Faso' }}
+          {{ ministere()?.nomGeneral || ' Ministère de l’Enseignement Supérieur, de la Recherche et de l’Innovation' }}
         </div>
         
           <!--<div class="inline-flex items-center gap-2 px-3 py-1 bg-white text-green-700 text-sm font-medium rounded-full mb-6">
@@ -17,13 +17,12 @@
          {{ ministere()?.nomGeneral || 'Burkina Faso' }}
         </div>-->
         <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-          Votre portail pour la 
-          <span class="text-green-300">transformation digitale</span> 
+          Votre portail pour l' 
+          <span class="text-green-300">Enseignement Supérieur, la Recherche et l'innovation</span> 
           du Burkina Faso
         </h1>
         <p class="text-lg text-white/80 mb-8 leading-relaxed">
-          Le Ministère de la Transition Digitale, des Postes et des Communications Électroniques 
-          œuvre pour le développement de l'économie numérique et la modernisation des services publics.
+          Le Ministère de l’Enseignement Supérieur, de la Recherche et de l’Innovation œuvre pour l'enseignement, la recherche et l'innovation dans les institutions et universités du Burkina Faso.
         </p>
         <div class="flex flex-wrap gap-4">
           <a routerLink="/actualites" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-green-700 font-medium rounded-lg hover:bg-green-50 transition-colors shadow-sm">
@@ -44,7 +43,7 @@
             <!-- Image principale qui remplace le SVG -->
             <div class="w-full h-80 rounded-2xl overflow-hidden flex items-center justify-center">
             <img 
-              [src]="ministere()?.image ? getImageUrl(ministere()!.image) : 'assets/images/home.jpg'"
+              [src]="ministere()?.image ? getImageUrl(ministere()!.image) : 'assets/images/ministere.png'"
               alt="Illustration droite"
               class="w-full h-full object-cover rounded-2xl"
             />
