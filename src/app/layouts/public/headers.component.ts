@@ -20,7 +20,7 @@ import { AuthService } from '../../core/services/auth.service';
               </svg>
             </div>
             <div class="hidden md:block">
-              <span class="text-sm font-semibold text-slate-800">MTDPCE</span>
+              <span class="text-sm font-semibold text-slate-800">MESRI</span>
               <span class="text-sm text-danger-500 font-bold ml-1">Burkina Faso</span> <span class="text-sm font-medium text-danger-500">
     Burkina Faso
   </span>
@@ -193,31 +193,31 @@ import { AuthService } from '../../core/services/auth.service';
 })
 export class HeaderComponent {
   private authService = inject(AuthService);
-  
+
   mobileMenuOpen = signal(false);
   searchOpen = signal(false);
   openSubmenu = signal<string | null>(null);
-  
+
   toggleMobileMenu() {
     this.mobileMenuOpen.update(v => !v);
     if (!this.mobileMenuOpen()) {
       this.openSubmenu.set(null);
     }
   }
-  
+
   closeMobileMenu() {
     this.mobileMenuOpen.set(false);
     this.openSubmenu.set(null);
   }
-  
+
   toggleSearch() {
     this.searchOpen.update(v => !v);
   }
-  
+
   toggleSubmenu(menu: string) {
     this.openSubmenu.update(v => v === menu ? null : menu);
   }
-  
+
   @HostListener('window:resize')
   onResize() {
     if (window.innerWidth >= 1024) {
