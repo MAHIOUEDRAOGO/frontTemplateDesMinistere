@@ -76,6 +76,12 @@
        class="block px-4 py-2 text-sm text-slate-600 hover:bg-primary-50 hover:text-primary-600 transition-colors">
        Structures Rattachées
     </a>
+    <a routerLink="/ministere/domains"
+       routerLinkActive="text-primary-600 bg-primary-50"
+       [routerLinkActiveOptions]="{ exact: true }"
+       class="block px-4 py-2 text-sm text-slate-600 hover:bg-primary-50 hover:text-primary-600 transition-colors">
+       Domaines
+    </a>
   </div>
 </div>
 
@@ -203,6 +209,7 @@
                   <a routerLink="/ministere/missions" (click)="closeMobileMenu()" class="block px-4 py-2 rounded-lg text-sm text-slate-500 hover:bg-primary-50 hover:text-primary-600 transition-colors">Missions</a>
                   <a routerLink="/ministere/organigramme" (click)="closeMobileMenu()" class="block px-4 py-2 rounded-lg text-sm text-slate-500 hover:bg-primary-50 hover:text-primary-600 transition-colors">Organigramme</a>
                   <a routerLink="/ministere/structures" (click)="closeMobileMenu()" class="block px-4 py-2 rounded-lg text-sm text-slate-500 hover:bg-primary-50 hover:text-primary-600 transition-colors">Structures Rattachées</a>
+                  <a routerLink="/ministere/domains" (click)="closeMobileMenu()" class="block px-4 py-2 rounded-lg text-sm text-slate-500 hover:bg-primary-50 hover:text-primary-600 transition-colors">Domaines</a>
                 </div>
               }
             </div>

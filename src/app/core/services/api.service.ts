@@ -677,4 +677,5 @@ getAllEvents(page = 0, size = 10): Observable<Page<Events>> {
   deleteStructure(id: number): Observable<ApiResponse<void>> {
     return this.http.delete<ApiResponse<void>>(`${this.API_URL}/structures/${id}`);
   }
+
 }
