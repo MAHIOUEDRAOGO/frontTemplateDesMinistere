@@ -1,0 +1,15 @@
+.domaine {
+   max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.domaine > div {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid #00843b;
+  cursor: pointer;
+  
+}
