@@ -21,14 +21,14 @@
   @for (domain of domains(); track domain.id) {
     <div class="domaine">
       <h3>{{ domain.nom }}</h3>
-      <small>ID: {{ domain.id }}</small>
+      <!-- <small>ID: {{ domain.id }}</small> -->
     </div>
   }
 
 </div>
 
 @if (domains().length === 0) {
-  <p>Aucun domaine disponible</p>
+  <p class="domaine">Aucun domaine disponible</p>
 }
 
-<h1>{{ domains().length }} domaines</h1>
+<!-- <h1>{{ domains().length }} domaines</h1> -->
