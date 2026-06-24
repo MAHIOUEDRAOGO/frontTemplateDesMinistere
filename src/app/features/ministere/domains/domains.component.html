@@ -1,0 +1,34 @@
+<!-- Bannière -->
+<div class="bg-gradient-to-r from-[#00843B] to-[#006B30] py-12">
+  <div class="container mx-auto px-4">
+    <h1 class="text-3xl font-bold text-white mb-2">Domaines</h1>
+    <nav class="text-green-100 text-sm">
+      <a routerLink="/" class="hover:text-white">Accueil</a>
+      <span class="mx-2">›</span>
+      <a routerLink="/ministere/ministre" class="hover:text-white">Ministère</a>
+      <span class="mx-2">›</span>
+      <span class="text-white">Domaines</span>
+    </nav>
+  </div>
+</div>
+
+
+
+<h2>Liste des domaines</h2>
+
+<div class="domaines">
+
+  @for (domain of domains(); track domain.id) {
+    <div class="domaine">
+      <h3>{{ domain.nom }}</h3>
+      <small>ID: {{ domain.id }}</small>
+    </div>
+  }
+
+</div>
+
+@if (domains().length === 0) {
+  <p>Aucun domaine disponible</p>
+}
+
+<h1>{{ domains().length }} domaines</h1>

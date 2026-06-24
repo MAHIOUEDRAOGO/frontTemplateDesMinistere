@@ -24,7 +24,11 @@ export const routes: Routes = [
       { path: 'evenements', loadComponent: () => import('./features/events/evenements/evenements.component').then(m => m.EvenementsComponent) },
       { path: 'agendas', loadComponent: () => import('./features/agendas/agendas.component').then(m => m.AgendasComponent) },
       { path: 'agendas/:id', loadComponent: () => import('./features/agendas/detail-agenda/detail-agenda.component').then(m => m.DetailAgendaComponent) },
-     { path: 'communiques', loadComponent: () => import('./features/communiques/communiques.component').then(m => m.CommuniquesComponent) },
+      { path: 'communiques', loadComponent: () => import('./features/communiques/communiques.component').then(m => m.CommuniquesComponent) },
+
+
+      { path: 'ministere/domains', loadComponent: () => import('./features/ministere/domains/domains.component').then(m => m.DomainsComponent) },
+      
       
       // Redirections pour compatibilité
       { path: 'articles', redirectTo: 'actualites', pathMatch: 'full' },
