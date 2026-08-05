@@ -41,10 +41,10 @@ var MinistreComponent = class _MinistreComponent {
       \u0275\u0275text(14, "Ministre");
       \u0275\u0275elementEnd()()()();
       \u0275\u0275elementStart(15, "section", 8)(16, "div", 1)(17, "div", 9)(18, "div", 10)(19, "div", 11)(20, "span", 12);
-      \u0275\u0275text(21, " LA MINISTRE ");
+      \u0275\u0275text(21, " LE MINISTRE ");
       \u0275\u0275elementEnd();
       \u0275\u0275elementStart(22, "h2", 13);
-      \u0275\u0275text(23, "Aminata ZERBO/SABANE");
+      \u0275\u0275text(23, "Adjima THIOMBIANO");
       \u0275\u0275elementEnd()();
       \u0275\u0275elementStart(24, "div", 14)(25, "div", 15);
       \u0275\u0275element(26, "img", 16);
