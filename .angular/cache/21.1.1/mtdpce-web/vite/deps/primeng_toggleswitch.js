@@ -12,13 +12,13 @@ import {
   PrimeTemplate,
   SharedModule
 } from "./chunk-LMSWBNEU.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-DQMOYR4G.js";
 import "./chunk-E7DL4EJZ.js";
 import {
   x
 } from "./chunk-VI4B5AYV.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-DQMOYR4G.js";
 import {
   CommonModule,
   NgTemplateOutlet,
