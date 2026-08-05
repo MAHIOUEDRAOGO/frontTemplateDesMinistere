@@ -333,7 +333,11 @@ viewArticle(article: Article): void {
   }
   
 saveArticle(form?: NgForm): void {
+
    // sécurité supplémentaire
+   /*la vérfication de cette conditin  implique que soit le tibre qui est un champ obligatoire est vide soit aucun contenu
+cpdt si il ya un contenue la rgle est que il ne créé pas d'article meme si formulaire remplis ????teste de la condition saveArticle dant article.component
+24-06-26 16h12?????*/
   if (!this.form.title || !this.form.content) return;
 
   // image obligatoire pour ACTUALITE
