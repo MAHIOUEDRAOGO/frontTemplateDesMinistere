@@ -62,19 +62,19 @@
        routerLinkActive="text-primary-600 bg-primary-50"
        [routerLinkActiveOptions]="{ exact: true }"
        class="block px-4 py-2 text-sm text-slate-600 hover:bg-primary-50 hover:text-primary-600 transition-colors">
-       Missions
+       Cabinet
     </a>
     <a routerLink="/ministere/organigramme"
        routerLinkActive="text-primary-600 bg-primary-50"
        [routerLinkActiveOptions]="{ exact: true }"
        class="block px-4 py-2 text-sm text-slate-600 hover:bg-primary-50 hover:text-primary-600 transition-colors">
-       Organigramme
+       Organisation
     </a>
     <a routerLink="/ministere/structures"
        routerLinkActive="text-primary-600 bg-primary-50"
        [routerLinkActiveOptions]="{ exact: true }"
        class="block px-4 py-2 text-sm text-slate-600 hover:bg-primary-50 hover:text-primary-600 transition-colors">
-       Structures Rattachées
+       Secrétariat Général
     </a>
   </div>
 </div>
@@ -93,7 +93,7 @@
           Actualités
         </a>-->
 
-  <a 
+  <!-- <a 
   (click)="goToSection('projets')" 
   [ngClass]="{
     'text-primary-600 bg-primary-50': activeSection === 'projets',
@@ -101,7 +101,7 @@
   }"
   class="px-3 py-2 rounded-lg text-sm font-medium hover:text-primary-600 hover:bg-primary-50 transition-colors whitespace-nowrap cursor-pointer">
   Grands Chantiers
-</a>
+</a> -->
 
         <!--<a routerLink="/projets" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-primary-50 transition-colors whitespace-nowrap">
           Grands Chantiers
@@ -200,9 +200,9 @@
               @if (openSubmenu() === 'ministere') {
                 <div class="ml-4 mt-1 space-y-1">
                   <a routerLink="/ministere/ministre" (click)="closeMobileMenu()" class="block px-4 py-2 rounded-lg text-sm text-slate-500 hover:bg-primary-50 hover:text-primary-600 transition-colors">Le Ministre</a>
-                  <a routerLink="/ministere/missions" (click)="closeMobileMenu()" class="block px-4 py-2 rounded-lg text-sm text-slate-500 hover:bg-primary-50 hover:text-primary-600 transition-colors">Missions</a>
-                  <a routerLink="/ministere/organigramme" (click)="closeMobileMenu()" class="block px-4 py-2 rounded-lg text-sm text-slate-500 hover:bg-primary-50 hover:text-primary-600 transition-colors">Organigramme</a>
-                  <a routerLink="/ministere/structures" (click)="closeMobileMenu()" class="block px-4 py-2 rounded-lg text-sm text-slate-500 hover:bg-primary-50 hover:text-primary-600 transition-colors">Structures Rattachées</a>
+                  <a routerLink="/ministere/cabinet" (click)="closeMobileMenu()" class="block px-4 py-2 rounded-lg text-sm text-slate-500 hover:bg-primary-50 hover:text-primary-600 transition-colors">Cabinet</a>
+                  <a routerLink="/ministere/organisation" (click)="closeMobileMenu()" class="block px-4 py-2 rounded-lg text-sm text-slate-500 hover:bg-primary-50 hover:text-primary-600 transition-colors">Organisation</a>
+                  <a routerLink="/ministere/structures" (click)="closeMobileMenu()" class="block px-4 py-2 rounded-lg text-sm text-slate-500 hover:bg-primary-50 hover:text-primary-600 transition-colors">Secrétariat Général</a>
                 </div>
               }
             </div>

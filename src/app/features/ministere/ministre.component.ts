@@ -29,9 +29,9 @@ import { RouterLink } from '@angular/router';
           <div class="bg-gradient-to-b from-green-50 to-white rounded-2xl p-6 shadow-lg border border-green-100">
             <div class="text-center mb-6">
               <span class="inline-block px-4 py-1 bg-green-600 text-white text-sm font-medium rounded-full mb-4">
-                LA MINISTRE
+                LE MINISTRE
               </span>
-              <h2 class="text-2xl font-bold text-gray-800">Aminata ZERBO/SABANE</h2>
+              <h2 class="text-2xl font-bold text-gray-800">Adjima THIOMBIANO</h2>
             </div>
             
             <div class="relative mb-6">
@@ -49,7 +49,7 @@ import { RouterLink } from '@angular/router';
                 </svg>
                 <div>
                   <span class="text-gray-500">Nom :</span>
-                  <span class="font-medium text-gray-800 ml-1">ZERBO/SABANE</span>
+                  <span class="font-medium text-gray-800 ml-1">Adjima THIOMBIANO</span>
                 </div>
               </div>
               <div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm">
@@ -58,7 +58,7 @@ import { RouterLink } from '@angular/router';
                 </svg>
                 <div>
                   <span class="text-gray-500">Prénom :</span>
-                  <span class="font-medium text-gray-800 ml-1">Aminata</span>
+                  <span class="font-medium text-gray-800 ml-1"> Adjima </span>
                 </div>
               </div>
               <div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm">
@@ -76,7 +76,7 @@ import { RouterLink } from '@angular/router';
                 </svg>
                 <div>
                   <span class="text-gray-500">Profession :</span>
-                  <span class="font-medium text-gray-800 ml-1">Enseignante en Informatique</span>
+                  <span class="font-medium text-gray-800 ml-1">Enseignant Chercheur</span>
                 </div>
               </div>
             </div>

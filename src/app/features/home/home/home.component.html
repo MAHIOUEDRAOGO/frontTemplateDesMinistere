@@ -17,8 +17,8 @@
          {{ ministere()?.nomGeneral || 'Burkina Faso' }}
         </div>-->
         <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-          Votre portail pour <br> l' 
-          <span class="text-green-300">Enseignement Supérieur, la Recherche et l'innovation</span> 
+          Votre portail pour <br>
+          l'<span class="text-green-300">Enseignement Supérieur, la Recherche et l'innovation</span> 
           du Burkina Faso
         </h1>
         <p class="text-lg text-white/80 mb-8 leading-relaxed">
@@ -435,12 +435,12 @@
 
 <section class="py-16 bg-white-50" id="projets">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between mb-8">
+   <!-- <div class="flex items-center justify-between mb-8">
       <div>
         <h2 class="text-2xl font-bold text-slate-800">Les grands chantiers</h2>
         <p class="text-slate-600 mt-1">Nos initiatives pour la transformation digitale</p>
       </div>
-      <!-- Bouton Voir tous (optionnel) -->
+       Bouton Voir tous (optionnel) (à commenter)
       <button *ngIf="!showAllProjects()" (click)="voirTousProjets()" 
          class="hidden sm:inline-flex items-center gap-2 px-4 py-2 border border-[#00843B] bg-white text-[#00843B] font-medium rounded-lg hover:bg-[#f0fdf4] transition-colors">
         Voir les autres
@@ -448,7 +448,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
         </svg>
       </button>
-    </div>
+    </div>  -->
 
     <!-- Liste des projets -->
     <ng-container *ngIf="projects().length > 0; else noProjects">
