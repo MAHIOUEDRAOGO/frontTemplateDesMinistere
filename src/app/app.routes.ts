@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { authGuard, adminGuard, guestGuard } from './core/guards/auth.guard';
-
 export const routes: Routes = [
   // Public routes with layout
   {
@@ -10,6 +9,10 @@ export const routes: Routes = [
       { path: '', loadComponent: () => import('./features/home/home/home.component').then(m => m.HomeComponent) },
       { path: 'actualites', loadComponent: () => import('./features/articles/articles/articles.component').then(m => m.ArticlesComponent) },
       { path: 'actualites/:id', loadComponent: () => import('./features/articles/detail-articles/detail-articles.component').then(m => m.DetailArticlesComponent) },
+      {
+        path: 'dgesup',
+        loadComponent: () => import('./features/dgesup/dgesup').then(m => m.Dgesup)
+      },
       { path: 'projets', loadComponent: () => import('./features/projects/projets/projets.component').then(m => m.ProjetsComponent) },
       { path: 'projets/:id', loadComponent: () => import('./features/projects/detail-projets/detail-projets.component').then(m => m.DetailProjetsComponent) },
       { path: 'ressources/documents', loadComponent: () => import('./features/documents/documents/documents.component').then(m => m.DocumentsComponent) },
