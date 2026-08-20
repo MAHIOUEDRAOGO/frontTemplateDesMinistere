@@ -1,6 +1,6 @@
     <div class="min-h-screen bg-gray-50">
       <!-- Hero Section -->
-      <section class="bg-gradient-to-br from-[#00843B] to-[#006B30] text-white py-16">
+      <section class="bg-gradient-to-br from-[#2105a0] to-[#0f0070] text-white py-16">
         <div class="container mx-auto px-4">
           <h1 class="text-4xl font-bold mb-4" style="color: white;">Agenda des Événements</h1>
           <p class="text-xl text-emerald-100">Découvrez les événements organisés par le ministère</p>
@@ -16,16 +16,17 @@
     (click)="filterByStatus('all')"
     [ngClass]="selectedStatus === 'all' ? 'text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
     class="px-6 py-2 rounded-lg font-medium transition-colors"
-    [style.background-color]="selectedStatus === 'all' ? '#006B30' : ''"
+    [style.background-color]="selectedStatus === 'all' ? '#0f0070' : ''"
   >
+  
     Tous
   </button>
-
+<!-- 006B30 -->
   <button
     (click)="filterByStatus('UPCOMING')"
     [ngClass]="selectedStatus === 'UPCOMING' ? 'text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
     class="px-6 py-2 rounded-lg font-medium transition-colors"
-    [style.background-color]="selectedStatus === 'UPCOMING' ? '#006B30' : ''"
+    [style.background-color]="selectedStatus === 'UPCOMING' ? '#0f0070' : ''"
   >
     À venir
   </button>
@@ -34,7 +35,7 @@
     (click)="filterByStatus('ONGOING')"
     [ngClass]="selectedStatus === 'ONGOING' ? 'text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
     class="px-6 py-2 rounded-lg font-medium transition-colors"
-    [style.background-color]="selectedStatus === 'ONGOING' ? '#006B30' : ''"
+    [style.background-color]="selectedStatus === 'ONGOING' ? '#0f0070' : ''"
   >
     En cours
   </button>
@@ -43,7 +44,7 @@
     (click)="filterByStatus('COMPLETED')"
     [ngClass]="selectedStatus === 'COMPLETED' ? 'text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
     class="px-6 py-2 rounded-lg font-medium transition-colors"
-    [style.background-color]="selectedStatus === 'COMPLETED' ? '#006B30' : ''"
+    [style.background-color]="selectedStatus === 'COMPLETED' ? '#0f0070' : ''"
   >
     Passés
   </button>

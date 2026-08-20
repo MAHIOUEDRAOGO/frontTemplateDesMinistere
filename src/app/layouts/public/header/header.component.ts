@@ -186,9 +186,31 @@ ministereRoutes = [
   '/ministere/structures'
 ];
 
+
+informationsRoutes = [
+  '/actualites',
+  '/dgesup'
+];
+
+
+grandsChantiersRoutes = [
+  '/evenements',
+]
+
+
+
+
 // Fonction pour savoir si le parent Ministère doit être actif
 isMinistereActive(): boolean {
   return this.ministereRoutes.some(route => this.router.url.startsWith(route));
+}
+
+isInformationsActive(): boolean {
+  return this.informationsRoutes.some(route => this.router.url.startsWith(route));
+}
+
+isGrandsChantiersActive(): boolean {
+  return this.grandsChantiersRoutes.some(route => this.router.url.startsWith(route));
 }
 
 }
