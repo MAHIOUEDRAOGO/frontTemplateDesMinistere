@@ -28,12 +28,14 @@ export const routes: Routes = [
       { path: 'agendas', loadComponent: () => import('./features/agendas/agendas.component').then(m => m.AgendasComponent) },
       { path: 'agendas/:id', loadComponent: () => import('./features/agendas/detail-agenda/detail-agenda.component').then(m => m.DetailAgendaComponent) },
       { path: 'communiques', loadComponent: () => import('./features/communiques/communiques.component').then(m => m.CommuniquesComponent) },
-
-
       { path: 'ministere/domains', loadComponent: () => import('./features/ministere/domains/domains.component').then(m => m.DomainsComponent) },
       
+      // chemin ajouter pour les sous menus du menu Ressources
+      { path: 'ressources/archives', loadComponent: () => import('./features/ressources/archives/archives.component').then(m => m.ArchivesComponent) },
+      { path: 'ressources/documents', loadComponent: () => import('./features/ressources/documents/documents.component').then(m => m.DocumentsComponent) },
+      { path: 'ressources/mediatheques', loadComponent: () => import('./features/ressources/mediatheques/mediatheques.component').then(m => m.MediathequesComponent ) },      
       
-      // Redirections pour compatibilité
+    // Redirections pour compatibilité
       { path: 'articles', redirectTo: 'actualites', pathMatch: 'full' },
       
       { path: 'articles/:id', redirectTo: 'actualites/:id', pathMatch: 'full' },
@@ -85,9 +87,11 @@ export const routes: Routes = [
 
      { path: 'structures', loadComponent: () => import('./features/admin/structure-rattaches/structure-rattaches.component').then(m => m.StructureRattachesComponent) },
      
-    ]
-  },
-  
+     { path: 'ressources/archives', loadComponent: () => import('./features/admin/ressources/archives/archives.component').then(m => m.ArchivesComponent) },
+     { path: 'ressources/documents', loadComponent: () => import('./features/admin/ressources/documents/documents.component').then(m => m.DocumentsComponent) },
+     { path: 'ressources/mediatheques', loadComponent: () => import('./features/admin/ressources/mediatheques/mediatheques.component').then(m => m.MediathequesComponent) },
+      
+    ];
   // Fallback
   { path: '**', redirectTo: '' }
 ];
