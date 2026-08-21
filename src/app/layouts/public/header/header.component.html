@@ -134,6 +134,28 @@
 
                 <!-- Dropdown -->
               <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-md border border-slate-100 py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  
+                <!-- Ajout des sous titres de l'ancien site  'Archives' 'Documentations ''Médiathèques' -->
+                  <a routerLink="/ressources/archives"
+                    routerLinkActive="text-primary-600 bg-primary-50"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-primary-50 hover:text-primary-600 transition-colors">
+                    Archives
+                  </a>
+                   <a routerLink="/ressources/documents"
+                    routerLinkActive="text-primary-600 bg-primary-50"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-primary-50 hover:text-primary-600 transition-colors">
+                    Documents
+                  </a>
+                   <a routerLink="/ressources/mediatheques"
+                    routerLinkActive="text-primary-600 bg-primary-50"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-primary-50 hover:text-primary-600 transition-colors">
+                    Médiathèques
+                  </a>
+
+
                   <a routerLink="/ressources/documents"
                     routerLinkActive="text-primary-600 bg-primary-50"
                     [routerLinkActiveOptions]="{ exact: true }"
