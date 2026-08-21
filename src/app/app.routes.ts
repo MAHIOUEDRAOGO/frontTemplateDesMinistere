@@ -91,7 +91,8 @@ export const routes: Routes = [
      { path: 'ressources/documents', loadComponent: () => import('./features/admin/ressources/documents/documents.component').then(m => m.DocumentsComponent) },
      { path: 'ressources/mediatheques', loadComponent: () => import('./features/admin/ressources/mediatheques/mediatheques.component').then(m => m.MediathequesComponent) },
       
-    ];
+    ]
+  },
   // Fallback
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '' },
 ];
