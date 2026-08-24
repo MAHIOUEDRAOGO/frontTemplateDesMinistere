@@ -78,7 +78,8 @@ export const routes: Routes = [
      { path: 'domains', loadComponent: () => import('./features/admin/domains/domains.component').then(m => m.DomainsComponent) },
      { path: 'ministre', loadComponent: () => import('./features/admin/ministere/ministre/ministre.component').then(m => m.MinistreComponent) },
      { path: 'etats', loadComponent: () => import('./features/admin/ministere/etats/etats.component').then(m => m.EtatsComponent) },
-     
+
+
      { path: 'structures', loadComponent: () => import('./features/admin/structure-rattaches/structure-rattaches.component').then(m => m.StructureRattachesComponent) },
      
     ]

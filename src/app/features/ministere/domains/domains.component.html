@@ -1,20 +1,20 @@
 <!-- Bannière -->
 <div class="bg-gradient-to-r from-[#00843B] to-[#006B30] py-12">
   <div class="container mx-auto px-4">
-    <h1 class="text-3xl font-bold text-white mb-2">Domaines</h1>
+    <h1 class="text-3xl font-bold text-white mb-2">Cabinet</h1>
     <nav class="text-green-100 text-sm">
       <a routerLink="/" class="hover:text-white">Accueil</a>
       <span class="mx-2">›</span>
       <a routerLink="/ministere/ministre" class="hover:text-white">Ministère</a>
       <span class="mx-2">›</span>
-      <span class="text-white">Domaines</span>
+      <span class="text-white">Cabinet</span>
     </nav>
   </div>
 </div>
 
 
 
-<h2>Liste des domaines</h2>
+<h2>Composition du Cabinet</h2>
 
 <div class="domaines">
 
@@ -28,7 +28,7 @@
 </div>
 
 @if (domains().length === 0) {
-  <p class="domaine">Aucun domaine disponible</p>
+  <p class="domaine">Aucune information disponible</p>
 }
 
 <!-- <h1>{{ domains().length }} domaines</h1> -->
