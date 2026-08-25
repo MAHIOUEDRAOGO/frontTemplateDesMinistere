@@ -1,5 +1,8 @@
   <!-- Hero Section - Design soft et épuré -->
-<section class="relative py-16 md:py-24 overflow-hidden" style="background-color:#00843B;">
+   <!-- #230084 -->
+    <!-- #1c1c78 -->
+     <!-- #0f0070 -->
+<section class="relative py-16 md:py-24 overflow-hidden" style="background-color:#0f0070;">
   <!-- Décoration subtile -->
   <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary-50 to-transparent"></div>
   <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent-50 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2 opacity-50"></div>
@@ -7,8 +10,8 @@
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <div>
-        <div class="inline-flex items-center gap-2 px-3 py-1 bg-white text-green-700 text-xs md:text-sm font-medium rounded-full mb-6 whitespace-nowrap">
-          <span class="w-2 h-2 bg-green-600 rounded-full animate-pulse"></span>
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-white text-blue-700 text-xs md:text-sm font-medium rounded-full mb-6 whitespace-nowrap">
+          <span class="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
           {{ ministere()?.nomGeneral || ' Ministère de l’Enseignement Supérieur, de la Recherche et de l’Innovation' }}
         </div>
         
@@ -18,14 +21,14 @@
         </div>-->
         <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
           Votre portail pour l' 
-          <span class="text-green-300">Enseignement Supérieur, la Recherche et l'innovation</span> 
+          <span class="text-blue-300">Enseignement Supérieur, la Recherche et l'innovation</span> 
           du Burkina Faso
         </h1>
         <p class="text-lg text-white/80 mb-8 leading-relaxed">
           Le Ministère de l’Enseignement Supérieur, de la Recherche et de l’Innovation œuvre pour l'enseignement, la recherche et l'innovation dans les institutions et universités du Burkina Faso.
         </p>
         <div class="flex flex-wrap gap-4">
-          <a routerLink="/actualites" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-green-700 font-medium rounded-lg hover:bg-green-50 transition-colors shadow-sm">
+          <a routerLink="/actualites" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-blue-700 font-medium rounded-lg hover:bg-blue-50 transition-colors shadow-sm">
             Découvrir les actualités
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -205,7 +208,7 @@
         </button>
 
         <a (click)="showAll() ? reduireArticles() : voirToutesActualites()"
-           class="inline-flex items-center gap-2 text-primary-600 font-medium hover:text-primary-700 cursor-pointer">
+           class="inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700 cursor-pointer">
           {{ showAll() ? 'Réduire' : 'Voir toutes les actualités' }}
         </a>
       </div>
@@ -438,11 +441,11 @@
     <div class="flex items-center justify-between mb-8">
       <div>
         <h2 class="text-2xl font-bold text-slate-800">Les grands chantiers</h2>
-        <p class="text-slate-600 mt-1">Nos initiatives pour la transformation digitale</p>
+        <p class="text-slate-600 mt-1">Nos initiatives pour l'enseignement supérieur</p>
       </div>
       <!-- Bouton Voir tous (optionnel) -->
       <button *ngIf="!showAllProjects()" (click)="voirTousProjets()" 
-         class="hidden sm:inline-flex items-center gap-2 px-4 py-2 border border-[#00843B] bg-white text-[#00843B] font-medium rounded-lg hover:bg-[#f0fdf4] transition-colors">
+         class="hidden sm:inline-flex items-center gap-2 px-4 py-2 border border-blue-500 bg-white text-blue-700 font-medium rounded-lg hover:bg-blue-100 transition-colors">
         Voir les autres
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -631,7 +634,7 @@
       <!-- Bouton dynamique -->
       <div *ngIf="!showAllServices()">
         <a (click)="voirTousServices()"
-          class="inline-flex items-center gap-2 px-4 py-2 border border-[#00843B] bg-white text-[#00843B] font-medium rounded-lg hover:bg-[#f0fdf4] transition-colors cursor-pointer">
+          class="inline-flex items-center gap-2 px-4 py-2 border border-blue-500 bg-white text-blue-700 font-medium rounded-lg hover:bg-blue-100 transition-colors cursor-pointer">
           Voir les autres
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
