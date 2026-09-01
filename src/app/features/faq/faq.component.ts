@@ -12,7 +12,7 @@ import { RouterLink } from '@angular/router';
   template: `
     <div class="min-h-screen bg-gray-50">
       <!-- Hero Section -->
-      <section class="bg-gradient-to-br from-[#00843B] to-[#006B30] text-white py-16">
+      <section class="bg-gradient-to-br from-[#1e67ec] to-[#0f0070] text-white py-16">
         <div class="container mx-auto px-4">
           <h1 class="text-4xl font-bold mb-4" style="color: white;">Foire Aux Questions</h1>
           <p class="text-xl text-emerald-100">Trouvez rapidement des réponses à vos questions</p>
@@ -46,7 +46,7 @@ import { RouterLink } from '@angular/router';
             <!-- Bouton "Toutes les questions" -->
             <button
               (click)="filterByCategory('all')"
-              [ngClass]="selectedCategory === 'all' ? 'bg-[#006B30] text-white border-[#006B30]' : 'bg-white text-gray-700 hover:bg-gray-100 border-gray-200'"
+              [ngClass]="selectedCategory === 'all' ? 'bg-[#0f0070] text-white border-[#1d01d1]' : 'bg-white text-gray-700 hover:bg-gray-100 border-gray-200'"
               class="px-6 py-2 rounded-full font-medium transition-colors border"
             >
               Toutes les questions
@@ -56,7 +56,7 @@ import { RouterLink } from '@angular/router';
             @for (category of categories; track category) {
               <button
                 (click)="filterByCategory(category)"
-                [ngClass]="selectedCategory === category ? 'bg-[#006B30] text-white border-[#006B30]' : 'bg-white text-gray-700 hover:bg-gray-100 border-gray-200'"
+                [ngClass]="selectedCategory === category ? 'bg-[#0f0070] text-white border-[#1d01d1]' : 'bg-white text-gray-700 hover:bg-gray-100 border-gray-200'"
                 class="px-6 py-2 rounded-full font-medium transition-colors border"
               >
                 {{ category }}
@@ -143,7 +143,7 @@ import { RouterLink } from '@angular/router';
             <h2 class="text-2xl font-bold text-gray-900 mb-4">Vous n'avez pas trouvé votre réponse ?</h2>
             <p class="text-gray-600 mb-6">Notre équipe est disponible pour répondre à toutes vos questions.</p>
             <a
-              routerLink="/contact" style="background-color: #006B30;"
+              routerLink="/contact" style="background-color: #0f0070;"
               class="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-emerald-700 transition-colors"
             >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
