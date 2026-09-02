@@ -10,8 +10,7 @@ export const routes: Routes = [
       { path: 'actualites', loadComponent: () => import('./features/articles/articles/articles.component').then(m => m.ArticlesComponent) },
       { path: 'actualites/:id', loadComponent: () => import('./features/articles/detail-articles/detail-articles.component').then(m => m.DetailArticlesComponent) },
       {
-        path: 'dgesup',
-        loadComponent: () => import('./features/dgesup/dgesup').then(m => m.Dgesup)
+        path: 'dgesup', loadComponent: () => import('./features/dgesup/dgesup').then(m => m.Dgesup)
       },
       { path: 'projets', loadComponent: () => import('./features/projects/projets/projets.component').then(m => m.ProjetsComponent) },
       { path: 'projets/:id', loadComponent: () => import('./features/projects/detail-projets/detail-projets.component').then(m => m.DetailProjetsComponent) },
